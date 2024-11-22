@@ -13,6 +13,7 @@ public class TestLogin extends DriverSetup {
 
     @BeforeMethod
     public void loadTestPage(){
+
         loginPage.navigateToLoginPage();
     }
     @Test
