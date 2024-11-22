@@ -14,11 +14,32 @@
                     <include name="testDashboardPage"/>
                 </methods>
             </class>
-            <class name="TestCases.SelectAuthorTest">
+            <class name="TestCases.FindAuthorTest">
                 <methods>
                     <include name="clickAuthorMenu"/>
                     <include name="scrollToFooter"/>
-                    <include name="clickAuthorPage4"/>
+                    <include name="navigateToNextPage"/>
+                </methods>
+            </class>
+            <class name="TestCases.SelectAuthorTest">
+                <methods>
+                    <include name="viewAuthor"/>
+                </methods>
+            </class>
+            <class name="TestCases.ViewBookDetailsTest">
+                <methods>
+                    <include name="viewBookDescription"/>
+                </methods>
+            </class>
+            <class name="TestCases.OrderBookTest">
+                <methods>
+                    <include name="testOrderBook"/>
+                </methods>
+            </class>
+
+            <class name="TestCases.OrderCompletePageTest">
+                <methods>
+                    <include name="testOrderCompletePage"/>
                 </methods>
             </class>
         </classes>
