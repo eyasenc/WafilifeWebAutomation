@@ -2,6 +2,7 @@
 
 Welcome to the **WafiLife Selenium Test Automation Project**! This repository automates key workflows of the [WafiLife website](https://www.wafilife.com/) using Selenium WebDriver, ensuring robust and reliable end-to-end testing.
 
+Here is the step by step process of automation: https://docs.google.com/spreadsheets/d/1XEiOQ1i6KOZs2WgUjPHagnlX2lKyei3o/edit?usp=sharing&ouid=108463798658545335708&rtpof=true&sd=true
 ---
 
 ## Table of Contents
