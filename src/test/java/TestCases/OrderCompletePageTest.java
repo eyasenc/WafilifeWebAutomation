@@ -16,16 +16,16 @@ import java.time.Duration;
 import java.util.Set;
 
 public class OrderCompletePageTest extends DriverSetup {
-    ViewBookDetails viewBookDetails = new ViewBookDetails();
+    //ViewBookDetails viewBookDetails = new ViewBookDetails();
     ClickOrderPage clickOrderPage = new ClickOrderPage();
-    OrderCompletePage orderCompletePage = new OrderCompletePage();
+    //OrderCompletePage orderCompletePage = new OrderCompletePage();
     public WebDriver driver;
 
     @Test
     public void testOrderCompletePage() {
-        driver.get(clickOrderPage.orderUrl);
+        getDriver().get(clickOrderPage.orderUrl);
 
-        // Click the order button
+        // Click the order `button
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement orderButton = wait.until(ExpectedConditions.elementToBeClickable(clickOrderPage.orderButton));
         orderButton.click();
@@ -44,10 +44,11 @@ public class OrderCompletePageTest extends DriverSetup {
                 break;
             }
         }
-
+        WebElement popupButton = getDriver().findElement(By.xpath("//*[@id=\"proceed_to_checkout\"]/a[1]/span"));
+        popupButton.click();
         // Perform actions on the popup
-        WebElement orderCompleteButton = wait.until(ExpectedConditions.elementToBeClickable(orderCompletePage.orderCompleteButton));
-        orderCompleteButton.click();
+//        WebElement orderCompleteButton = wait.until(ExpectedConditions.elementToBeClickable(orderCompletePage.orderCompleteButton));
+//        orderCompleteButton.click();
 
         // Close the popup window
         driver.close();

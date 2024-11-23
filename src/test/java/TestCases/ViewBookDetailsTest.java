@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ViewBookDetailsTest extends DriverSetup {
     ViewBookDetails viewBook = new ViewBookDetails();
-    
+
     @Test
     public void viewBookDescription() {
         getDriver().get(viewBook.viewBookUrl);

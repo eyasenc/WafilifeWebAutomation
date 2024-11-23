@@ -31,6 +31,7 @@ public class DriverSetup {private static String browserName = System.getProperty
     @BeforeSuite
     public void openABrowser(){
         WebDriver driver = getBrowser(browserName);
+//        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         setDriver(driver);
