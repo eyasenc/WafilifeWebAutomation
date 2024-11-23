@@ -57,8 +57,7 @@ git clone https://github.com/your-username/wafilife-selenium-tests.git
 cd wafilife-selenium-tests
 2. Install dependencies:
 mvn clean install
-3. onfigure config.properties for environment-specific details.
-Automation Features
+
 This test suite automates the following:
 
 Login: Authenticate with valid credentials.
@@ -84,11 +83,4 @@ allure serve target/allure-results
 Contributing
 We welcome contributions! Follow these steps:
 
-Fork this repository.
-Create a branch:
-git checkout -b feature/your-feature-name
-Commit changes:
-git commit -m "Your message"
-Push the branch:
-git push origin feature/your-feature-name
-Open a pull request.
+
