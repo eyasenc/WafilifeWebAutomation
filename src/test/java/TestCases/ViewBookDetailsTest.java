@@ -10,7 +10,7 @@ public class ViewBookDetailsTest extends DriverSetup {
 
     @Test
     public void viewBookDescription() {
-        getDriver().get(viewBook.viewBookUrl);
+        getDriver().navigate().to(viewBook.viewBookUrl);
         viewBook.clickOnElement(viewBook.ViewBookThumbnail);
 }
 }

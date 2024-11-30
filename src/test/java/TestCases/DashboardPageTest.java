@@ -11,7 +11,7 @@ public class DashboardPageTest extends DriverSetup {
     BasePage basePage = new BasePage();
     @Test
     public void testDashboardPage() {
-        getDriver().get(dashboardPage.dashUrl);
+        getDriver().navigate().to(dashboardPage.dashUrl);
         dashboardPage.clickOnElement(dashboardPage.clickWriterCategory);
 //        dashboardPage.takeScreenshot(dashboardPage);
 

@@ -9,7 +9,7 @@ public class OrderBookTest extends DriverSetup {
 
     @Test
     public void testOrderBook() throws InterruptedException {
-        getDriver().get(clickOrderPage.orderUrl);
+        getDriver().navigate().to(clickOrderPage.orderUrl);
         clickOrderPage.clickOnElement(clickOrderPage.orderButton);
         Thread.sleep(3000);
     }

@@ -9,7 +9,8 @@ public class SelectAuthorTest extends DriverSetup {
 
 @Test
 public void viewAuthor(){
-    getDriver().get(selectAuthor.authorUrl);
+    getDriver().navigate().to(selectAuthor.authorUrl);
+            //get(selectAuthor.authorUrl);
     selectAuthor.clickOnElement(selectAuthor.clickAuthor);
 
 

@@ -12,7 +12,7 @@ public void testCheckoutPage(){
     checkoutPage.writeOnElement(checkoutPage.nameInputField, "TestName");
     checkoutPage.writeOnElement(checkoutPage.phoneNumberField, "12154646721");
     checkoutPage.writeOnElement(checkoutPage.EmergencyPhoneNumberField, "46575482456");
-    checkoutPage.writeOnElement(checkoutPage.emialField, "nnheo@example.com");
+    checkoutPage.writeOnElement(checkoutPage.emailField, "nnheo@example.com");
     checkoutPage.writeOnElement(checkoutPage.districField, "dhaka");
     checkoutPage.writeOnElement(checkoutPage.areaField, "dhanmondi");
     checkoutPage.writeOnElement(checkoutPage.addressField, "staff quarter, dhanmondi 15");

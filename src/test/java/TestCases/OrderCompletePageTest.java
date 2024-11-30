@@ -23,8 +23,7 @@ public class OrderCompletePageTest extends DriverSetup {
 
     @Test
     public void testOrderCompletePage() {
-        getDriver().get(clickOrderPage.orderUrl);
-
+        getDriver().navigate().to(clickOrderPage.orderUrl);
         // Click the order `button
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement orderButton = wait.until(ExpectedConditions.elementToBeClickable(clickOrderPage.orderButton));

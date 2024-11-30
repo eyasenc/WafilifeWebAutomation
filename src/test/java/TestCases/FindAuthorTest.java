@@ -26,7 +26,8 @@ public class FindAuthorTest extends DriverSetup {
 
     @Test
     public void scrollToFooter() throws InterruptedException {
-        getDriver().get(CategoryResultPage.authorUrl);
+        getDriver().navigate().to(CategoryResultPage.authorUrl);
+//                get(CategoryResultPage.authorUrl);
         System.out.println(driver.getTitle());
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
@@ -36,7 +37,7 @@ public class FindAuthorTest extends DriverSetup {
 
     @Test
     public void navigateToNextPage() {
-        getDriver().get(CategoryResultPage.authorUrl);
+        getDriver().navigate().to(CategoryResultPage.authorUrl);
         //driver.get(String.valueOf(categoryResultPage.location));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         WebElement nextPageButton = wait.until(ExpectedConditions.elementToBeClickable(categoryResultPage.nextPage));
