@@ -13,7 +13,7 @@ public class DriverSetup {private static String browserName = System.getProperty
         DriverSetup.LOCAL_DRIVER.set(driver);
     }
 
-    public static WebDriver getDriver(){
+    public WebDriver getDriver(){
         return DriverSetup.LOCAL_DRIVER.get();
     }
 

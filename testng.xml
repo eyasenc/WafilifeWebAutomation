@@ -36,10 +36,14 @@
                     <include name="testOrderBook"/>
                 </methods>
             </class>
-
             <class name="TestCases.OrderCompletePageTest">
                 <methods>
                     <include name="testOrderCompletePage"/>
+                </methods>
+            </class>
+            <class name="TestCases.CheckoutPageTest">
+                <methods>
+                    <include name="testCheckoutPage"/>
                 </methods>
             </class>
         </classes>

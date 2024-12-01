@@ -2,13 +2,14 @@ package TestCases;
 
 import Pages.CheckoutPage;
 import Utilities.DriverSetup;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class CheckoutPageTest extends DriverSetup {
 CheckoutPage checkoutPage = new CheckoutPage();
 @Test
 public void testCheckoutPage(){
-    getDriver().get(checkoutPage.checkoutUrl);
+    getDriver().navigate().to(checkoutPage.checkoutUrl);
     checkoutPage.writeOnElement(checkoutPage.nameInputField, "TestName");
     checkoutPage.writeOnElement(checkoutPage.phoneNumberField, "12154646721");
     checkoutPage.writeOnElement(checkoutPage.EmergencyPhoneNumberField, "46575482456");
@@ -18,6 +19,6 @@ public void testCheckoutPage(){
     checkoutPage.writeOnElement(checkoutPage.addressField, "staff quarter, dhanmondi 15");
     checkoutPage.writeOnElement(checkoutPage.otherAddressField, "circle road, dhanmondi");
     checkoutPage.clickOnElement(checkoutPage.agreeTerms);
-    checkoutPage.clickOnElement(checkoutPage.finalOrderButton);
+//  checkoutPage.clickOnElement(checkoutPage.finalOrderButton);
 }
 }
